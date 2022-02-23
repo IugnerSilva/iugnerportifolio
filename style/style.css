@@ -6,7 +6,7 @@
 .hero{
     height: 100vh;
     width: 100%;   
-    background-image: url(/components/images/back.jpg);
+    background-image: url(/images/back.jpg);
     background-size: cover;
     background-position: center; 
 }
