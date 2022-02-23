@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;   
+    background-image: url(/components/images/back.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.logo{
+    color:white;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    content: '';
+    background-color: black;
+    opacity: .6;
+}
+
+span{
+    color: rgb(43, 43, 185);;
+}
+.title{
+    flex-direction: column;
+    line-height: 10px;
+    padding: 50px;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+}
+ul{
+    padding: 50px;
+}
+a{
+    color: white;
+    font-size: 20px;
+}
+a:hover{
+    color: rgb(43, 43, 185);
+    transition: 0.3s all;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    color: white;
+}
+
+h1{
+    color: rgb(43, 43, 185);
+    margin: 0px 0px 0px;
+    font-size: 60px;
+}
+h2{
+    color: rgb(43, 43, 185);
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+h3{
+    color: white;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    content: '';
+    background-color: black;
+    opacity: .9;
+}
+.about-text{
+	width: 550px;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.button{
+    border: 2px solid rgb(43, 43, 185);
+    padding: 10px;
+    border-radius: 15px;
+}
+.button:hover{
+    background-color: rgb(43, 43, 185);
+    color: white;
+    cursor: pointer;
+}
+
+
+.formcontact{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    content: '';
+    background-color: black;
+    opacity: .8;
+}
+
+form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 18px;
+}
+
+form label,
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 100%;
+}
+form label{
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea{
+    font: inherit;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+form textarea{
+    min-height: 13rem;
+    resize: vertical;
+
+}
+
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus{
+    outline: none;
+    border-color: rgb(43, 43, 185);
+    box-shadow: 3px rgb(43, 43, 185);
+}
+
+form button{
+    display: block;
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+    font: inherit;
+    border-color: rgb(43, 43, 185);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 105%;
+}
+
+form button:hover{
+    background-color: rgb(43, 43, 185);
+}
