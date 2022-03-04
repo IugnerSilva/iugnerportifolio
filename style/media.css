@@ -1,0 +1,112 @@
+
+.buttonmenu:focus~ul{
+    height: 230px;
+}
+.buttonmenu:hover{
+    background-color: rgb(79, 82, 85);
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(43, 43, 185);
+    transition: 0.3s all;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+.buttonmenu{
+    align-items: unset;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+@media screen and (max-width: 768px){
+    form{
+        font-size: 15px;
+    }
+    section{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 15px;
+        margin-bottom: 45px;
+    }
+    form input,form textarea{
+        width: 95%;
+    }
+    .formcontact{
+        width: 400px;
+    }
+
+    img{
+        padding-top: 20px;
+        width: 60%;
+        height: 60%;
+    }
+    .main{
+        width: 400px;
+        flex-direction: column;
+        top: -30px;
+    }
+    
+    .about-text{
+        width: 300px;
+    }
+    .about-text h2{
+        color: white;
+        font-size: 45px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .buttonmenu{
+        display: flex;
+    }
+
+    .content{
+        top: 60%;
+    }
+
+    a{  display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 15;
+    }
+
+    .title{
+        padding: 20px;
+        align-items: unset;
+    }
+    
+    header{
+        height: fit-content;
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    ul{
+        margin: 0;
+        flex-direction: column;
+        height: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    
+    
+}

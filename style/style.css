@@ -6,9 +6,11 @@
 .hero{
     height: 100vh;
     width: 100%;   
-    background-image: url(../images/back.jpg);
+    background-image: url(../images/back3.jpg);
     background-size: cover;
     background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .logo{
@@ -23,12 +25,14 @@ body{
 header{
     height: 10vh;
     display: flex;
+    position: fixed;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    content: '';
     background-color: black;
-    opacity: .6;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 span{
@@ -44,11 +48,13 @@ li{
     margin: 20px;
 }
 ul{
-    padding: 50px;
+    overflow: hidden;
+    margin-right: 50px;
 }
 a{
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 a:hover{
     color: rgb(43, 43, 185);
@@ -93,6 +99,7 @@ h5{
 	background-color: #191919;
 }
 .main{
+    padding: 20px;
 	width: 1130px;
 	max-width: 95%;
 	margin: 0 auto;
@@ -101,7 +108,14 @@ h5{
 	justify-content: space-around;
     content: '';
     background-color: black;
-    opacity: .9;
+    box-shadow: 0 0 5px rgb(54, 54, 65),
+                0 0 25px rgb(58, 58, 73);
+                border-radius: 15px;
+    
+}
+section{
+    padding-top: 80px;
+    
 }
 .about-text{
 	width: 550px;
@@ -119,31 +133,204 @@ h5{
 	font-size: 18px;
 	margin-bottom: 45px;
 }
+
 .button{
-    border: 2px solid rgb(43, 43, 185);
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40x;
+    letter-spacing: 2px;
     padding: 10px;
-    border-radius: 15px;
+    background-color: transparent;
 }
 .button:hover{
-    background-color: rgb(43, 43, 185);
-    color: white;
     cursor: pointer;
+    padding: 10px;
+    background: rgb(43, 43, 185);
+    color: #fff;
+    box-shadow: 0 0 5px rgb(43, 43, 185),
+                0 0 25px rgb(43, 43, 185);
+}
+a span{
+    position: absolute;
+    display: block;
+    background-color:rgb(43, 43, 185)
+}
+
+a span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
+    
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1{
+    0% {
+        left:-100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: -moz-linear-gradient(180deg, transparent,rgb(43, 43, 185));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0% {
+        top:-100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: -moz-linear-gradient(270deg, transparent,rgb(43, 43, 185));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+@keyframes btn-anim3{
+    0% {
+        right:-100%;
+    }
+    50%,100% {
+        right: 100%;
+    }
+}
+a span:nth-child(4){
+    bottom:-100;
+    left:0;
+    width: 2px;
+    height: 100%;
+    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4{
+    0% {
+        bottom:-100%;
+    }
+    50%,100% {
+        bottom: 100%;
+    }
+}
+button{
+    border: none;
+}
+button span{
+    position: absolute;
+    display: block;
+    background-color:rgb(43, 43, 185);
+    border: none;
+}
+
+button span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
+    
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1{
+    0% {
+        left:-100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
+}
+.buttonmenu{
+    display: none;
+}
+button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: -moz-linear-gradient(180deg, transparent,rgb(43, 43, 185));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0% {
+        top:-100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+}
+button span:nth-child(3){
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: -moz-linear-gradient(270deg, transparent,rgb(43, 43, 185));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+@keyframes btn-anim3{
+    0% {
+        right:-100%;
+    }
+    50%,100% {
+        right: 100%;
+    }
+}
+button span:nth-child(4){
+    bottom:-100;
+    left:0;
+    width: 2px;
+    height: 100%;
+    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4{
+    0% {
+        bottom:-100%;
+    }
+    50%,100% {
+        bottom: 100%;
+    }
 }
 
 
 .formcontact{
-    width: 50%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    content: '';
-    background-color: black;
-    opacity: .8;
+    
+        padding: 20px 10px 20px 10px;
+        width: 650px;
+        max-width: 95%;
+        height: 570px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: black;
+        box-shadow: 0 0 5px rgb(54, 54, 65),
+                    0 0 25px rgb(58, 58, 73);
+        border-radius: 15px;
+    
 }
 
 form{
@@ -154,8 +341,7 @@ form{
 
 form label,
 form input,
-form textarea,
-form button{
+form textarea{
     display: block;
     width: 100%;
 }
@@ -167,12 +353,14 @@ form label{
 
 form input,
 form textarea{
+    color: white;
     font: inherit;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 1rem;
-    border: 3px solid transparent;
+    border: 1px solid white;
     border-radius: 8px;
     transition: border-color, box-shadow 0.2s;
+    background-color: rgb(8, 8, 8);
 }
 form textarea{
     min-height: 13rem;
@@ -189,19 +377,3 @@ form textarea:focus{
     box-shadow: 3px rgb(43, 43, 185);
 }
 
-form button{
-    display: block;
-    background-color: transparent;
-    color: white;
-    padding: 1rem;
-    font: inherit;
-    border-color: rgb(43, 43, 185);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s;
-    width: 105%;
-}
-
-form button:hover{
-    background-color: rgb(43, 43, 185);
-}
