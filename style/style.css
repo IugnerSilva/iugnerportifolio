@@ -134,7 +134,7 @@ section{
 	margin-bottom: 45px;
 }
 
-.button{
+.butao{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -149,7 +149,7 @@ section{
     padding: 10px;
     background-color: transparent;
 }
-.button:hover{
+.butao:hover{
     cursor: pointer;
     padding: 10px;
     background: rgb(43, 43, 185);
@@ -332,6 +332,24 @@ button span:nth-child(4){
         border-radius: 15px;
     
 }
+.cards{
+    
+    padding: 20px 10px 20px 10px;
+    width: 150px;
+    max-width: 95%;
+    height: 70px;
+    margin-left: 600px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: 0 0 5px rgb(54, 54, 65),
+                0 0 25px rgb(58, 58, 73);
+    border-radius: 15px;
+
+}
 
 form{
     width: 100%;
@@ -377,3 +395,175 @@ form textarea:focus{
     box-shadow: 3px rgb(43, 43, 185);
 }
 
+.cardsPosition{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #555;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  height: 460px;
+  margin: 25px;
+  border: 1px solid white;
+  border-color: #2740d1;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
+/* Card Header*/
+.card-header {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: block;
+    margin-left: auto;
+    margin-right: auto 
+    
+}
+
+.card-img {
+  min-width: 40%;
+  width: auto;
+  height: 100%;
+}
+
+/* Card Body */
+.card-body {
+  height: 70px;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.card-local {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card-titulo {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.card-texto {
+  font-size: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* Card Footer */
+.card-footer {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.vermais{
+    font-size: 20px;
+}
+.vermais:hover {
+    color: blue;
+    cursor: pointer;
+    font-size: 21px;
+  }
+/* Cores Cards */
+.card-1 .card-footer {
+  background-color:black;
+}
+
+.card-1 .card-local {
+  color: #2740d1;
+}
+.content-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+    padding: 20px;
+}
+
+.content-modal{
+    justify-content: space-around;
+  
+    width: 160vh;
+    height: 70vh;
+    background:black;
+    transition: .2s ease-in;
+}
+
+.close-btn{
+   top: 10px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;  
+}
+.close-btn:hover{
+     color: rgb(43, 43, 185);
+     opacity: 1;
+ }
+
+ .btn-portifolio{
+     background-color: #000;
+     font-size: 30px;
+     position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-top: 30px;
+ }
+ .btn-portifolio:hover{
+    cursor: pointer;
+    padding: 10px;
+    background: rgb(43, 43, 185);
+    color: #fff;
+    box-shadow: 0 0 5px rgb(43, 43, 185),
+                0 0 25px rgb(43, 43, 185);
+}
