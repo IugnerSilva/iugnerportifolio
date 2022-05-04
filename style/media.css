@@ -47,17 +47,19 @@ ul {
     }
     .formcontact{
         width: 400px;
+        padding-top: 40px;
     }
 
     img{
-        padding-top: 20px;
+        padding-top: 40px;
         width: 60%;
-        height: 60%;
+        height: 10%;
     }
     .main{
         width: 400px;
         flex-direction: column;
-        top: -30px;
+        margin: 0 auto;
+	    top: 10px;
     }
     
     .about-text{
@@ -97,6 +99,7 @@ ul {
         flex-direction: column;
         padding: 0;
         align-items: flex-start;
+        position: absolute;
     }
 
     ul{
