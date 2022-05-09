@@ -49,17 +49,41 @@ ul {
         width: 400px;
         padding-top: 40px;
     }
+    
+    .close-btn{
+        
+    right: 30px;
+
+    }
 
     img{
-        padding-top: 40px;
-        width: 60%;
-        height: 10%;
+        min-width: 100%;
+        width: auto;
+        height: 100%;
+    }
+
+    .img-modal{
+        width: 30vh;
+        height: 80vh;
+        padding-top: 8vh;
+    }
+
+    .container{
+        margin-top: 120vh;
+        flex-direction: column;
+        
+    align-items: center;
+   
+    }
+
+    .content-modal{
+        flex-direction: column;
+        height: 100vh;
+        width: 70vh;
     }
     .main{
-        width: 400px;
         flex-direction: column;
-        margin: 0 auto;
-	    top: 10px;
+        
     }
     
     .about-text{
@@ -99,7 +123,7 @@ ul {
         flex-direction: column;
         padding: 0;
         align-items: flex-start;
-        position: absolute;
+        position: fixed;
     }
 
     ul{

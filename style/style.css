@@ -448,11 +448,6 @@ body {
     
 }
 
-.card-img {
-  min-width: 40%;
-  width: auto;
-  height: 100%;
-}
 
 /* Card Body */
 .card-body {
@@ -528,7 +523,7 @@ body {
 
 .close-btn{
    top: 10px;
-    right: 30px;
+    right: 150px;
     position: absolute;
     cursor: pointer;
     font-size: 50px;
