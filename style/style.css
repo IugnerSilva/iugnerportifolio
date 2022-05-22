@@ -1,28 +1,31 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.hero{
+.hero {
     height: 100vh;
-    width: 100%;   
+    width: 100%;
     background-image: url(../images/back3.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.logo{
-    color:white;
+.logo {
+    color: white;
     font-size: 35px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body{
+
+body {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-header{
+
+header {
     height: 10vh;
     display: flex;
     position: fixed;
@@ -35,106 +38,137 @@ header{
     left: 0;
 }
 
-span{
-    color: rgb(43, 43, 185);;
+span {
+    color: rgb(43, 43, 185);
+    ;
 }
-.title{
+
+.title {
     flex-direction: column;
     line-height: 10px;
     padding: 50px;
 }
-li{
+
+li {
     display: inline-block;
     margin: 20px;
 }
-ul{
+
+ul {
     overflow: hidden;
     margin-right: 50px;
 }
-a{
+
+a {
     color: white;
     font-size: 20px;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: rgb(43, 43, 185);
     transition: 0.3s all;
 }
-.content{
+
+.content-inicio {
     position: absolute;
     top: 50%;
     left: 8%;
     color: white;
 }
 
-h1{
+h1 {
     color: rgb(43, 43, 185);
     margin: 0px 0px 0px;
     font-size: 60px;
 }
-h2{
+
+h2 {
     color: rgb(43, 43, 185);
-    margin-bottom: 0px;
+    margin: 10px;
     font-size: 30px;
 }
-h3{
+
+h3 {
     color: white;
     margin-bottom: 0px;
     font-size: 25px;
 }
-h4{
-    color: white;
-    letter-spacing: 2px;
+
+h4 {
+    color: blue;
     font-size: 20px;
 }
-h5{
-	color: white;
-	font-size: 23px;
-	margin-bottom: 15px;
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
 }
 
-.about{
-	width: 100%;
-	padding: 100px 0px;
-	background-color: #191919;
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
 }
-.main{
-    padding: 20px;
-	width: 1130px;
-	max-width: 95%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+
+.main {
+    margin-left: 20vh;
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     content: '';
     background-color: black;
     box-shadow: 0 0 5px rgb(54, 54, 65),
-                0 0 25px rgb(58, 58, 73);
-                border-radius: 15px;
-    
-}
-section{
-    padding-top: 80px;
-    
-}
-.about-text{
-	width: 550px;
-}
-.about-text h2{
-	color: white;
-	font-size: 75px;
-	text-transform: capitalize;
-	margin-bottom: 20px;
-}
-.about-text p{
-	color: #fcfc;
-	letter-spacing: 1px;
-	line-height: 28px;
-	font-size: 18px;
-	margin-bottom: 45px;
+        0 0 25px rgb(58, 58, 73);
+    border-radius: 15px;
 }
 
-.butao{
+.main-modal {
+    margin-top: 12vh;
+    margin-left: 20vh;
+    padding: 20px;
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    content: '';
+    background-color: black;
+    box-shadow: 0 0 5px rgb(54, 54, 65),
+        0 0 25px rgb(58, 58, 73);
+    border-radius: 15px;
+
+
+}
+
+section {
+    padding-top: 80px;
+
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.butao {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -149,191 +183,225 @@ section{
     padding: 10px;
     background-color: transparent;
 }
-.butao:hover{
+
+.butao:hover {
     cursor: pointer;
     padding: 10px;
     background: rgb(43, 43, 185);
     color: #fff;
     box-shadow: 0 0 5px rgb(43, 43, 185),
-                0 0 25px rgb(43, 43, 185);
-}
-a span{
-    position: absolute;
-    display: block;
-    background-color:rgb(43, 43, 185)
+        0 0 25px rgb(43, 43, 185);
 }
 
-a span:nth-child(1){
-    top:0;
+a span {
+    position: absolute;
+    display: block;
+    background-color: rgb(43, 43, 185)
+}
+
+a span:nth-child(1) {
+    top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
-    
+    background: -moz-linear-gradient(90deg, transparent, rgb(43, 43, 185));
+
     animation: btn-anim1 1s linear infinite;
 }
-@keyframes btn-anim1{
+
+@keyframes btn-anim1 {
     0% {
-        left:-100%;
+        left: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         left: 100%;
     }
 }
 
-a span:nth-child(2){
+a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
-    background: -moz-linear-gradient(180deg, transparent,rgb(43, 43, 185));
+    background: -moz-linear-gradient(180deg, transparent, rgb(43, 43, 185));
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s;
 }
-@keyframes btn-anim2{
+
+@keyframes btn-anim2 {
     0% {
-        top:-100%;
+        top: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         top: 100%;
     }
 }
-a span:nth-child(3){
-    bottom:0;
+
+a span:nth-child(3) {
+    bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
-    background: -moz-linear-gradient(270deg, transparent,rgb(43, 43, 185));
+    background: -moz-linear-gradient(270deg, transparent, rgb(43, 43, 185));
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
 }
-@keyframes btn-anim3{
+
+@keyframes btn-anim3 {
     0% {
-        right:-100%;
+        right: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         right: 100%;
     }
 }
-a span:nth-child(4){
-    bottom:-100;
-    left:0;
+
+a span:nth-child(4) {
+    bottom: -100;
+    left: 0;
     width: 2px;
     height: 100%;
-    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
+    background: -moz-linear-gradient(90deg, transparent, rgb(43, 43, 185));
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s;
 }
-@keyframes btn-anim4{
+
+@keyframes btn-anim4 {
     0% {
-        bottom:-100%;
+        bottom: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         bottom: 100%;
     }
 }
-button{
-    border: none;
-}
-button span{
-    position: absolute;
-    display: block;
-    background-color:rgb(43, 43, 185);
+
+button {
     border: none;
 }
 
-button span:nth-child(1){
-    top:0;
+button span {
+    position: absolute;
+    display: block;
+    background-color: rgb(43, 43, 185);
+    border: none;
+}
+
+button span:nth-child(1) {
+    top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
-    
+    background: -moz-linear-gradient(90deg, transparent, rgb(43, 43, 185));
+
     animation: btn-anim1 1s linear infinite;
 }
-@keyframes btn-anim1{
+
+@keyframes btn-anim1 {
     0% {
-        left:-100%;
+        left: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         left: 100%;
     }
 }
-.buttonmenu{
+
+.buttonmenu {
     display: none;
 }
-button span:nth-child(2){
+
+button span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
-    background: -moz-linear-gradient(180deg, transparent,rgb(43, 43, 185));
+    background: -moz-linear-gradient(180deg, transparent, rgb(43, 43, 185));
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s;
 }
-@keyframes btn-anim2{
+
+@keyframes btn-anim2 {
     0% {
-        top:-100%;
+        top: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         top: 100%;
     }
 }
-button span:nth-child(3){
-    bottom:0;
+
+button span:nth-child(3) {
+    bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
-    background: -moz-linear-gradient(270deg, transparent,rgb(43, 43, 185));
+    background: -moz-linear-gradient(270deg, transparent, rgb(43, 43, 185));
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
 }
-@keyframes btn-anim3{
+
+@keyframes btn-anim3 {
     0% {
-        right:-100%;
+        right: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         right: 100%;
     }
 }
-button span:nth-child(4){
-    bottom:-100;
-    left:0;
+
+button span:nth-child(4) {
+    bottom: -100;
+    left: 0;
     width: 2px;
     height: 100%;
-    background: -moz-linear-gradient(90deg, transparent,rgb(43, 43, 185));
+    background: -moz-linear-gradient(90deg, transparent, rgb(43, 43, 185));
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s;
 }
-@keyframes btn-anim4{
+
+@keyframes btn-anim4 {
     0% {
-        bottom:-100%;
+        bottom: -100%;
     }
-    50%,100% {
+
+    50%,
+    100% {
         bottom: 100%;
     }
 }
 
 
-.formcontact{
-    
-        padding: 20px 10px 20px 10px;
-        width: 650px;
-        max-width: 95%;
-        height: 570px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        background-color: black;
-        box-shadow: 0 0 5px rgb(54, 54, 65),
-                    0 0 25px rgb(58, 58, 73);
-        border-radius: 15px;
-    
+.formcontact {
+    margin-top: -2vh;
+    margin-left: 25%;
+    width: 650px;
+    max-width: 95%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: 0 0 5px rgb(54, 54, 65),
+        0 0 25px rgb(58, 58, 73);
+    border-radius: 15px;
+
 }
-.cards{
-    
+
+.cards {
+
     padding: 20px 10px 20px 10px;
     width: 150px;
     max-width: 95%;
@@ -346,12 +414,12 @@ button span:nth-child(4){
     flex-direction: column;
     background-color: black;
     box-shadow: 0 0 5px rgb(54, 54, 65),
-                0 0 25px rgb(58, 58, 73);
+        0 0 25px rgb(58, 58, 73);
     border-radius: 15px;
 
 }
 
-form{
+form {
     width: 100%;
     max-width: 32rem;
     font-size: 18px;
@@ -359,18 +427,19 @@ form{
 
 form label,
 form input,
-form textarea{
+form textarea {
     display: block;
     width: 100%;
 }
-form label{
+
+form label {
     color: white;
     line-height: 1;
     margin-bottom: 0.5rem;
 }
 
 form input,
-form textarea{
+form textarea {
     color: white;
     font: inherit;
     padding: 5px;
@@ -380,7 +449,8 @@ form textarea{
     transition: border-color, box-shadow 0.2s;
     background-color: rgb(8, 8, 8);
 }
-form textarea{
+
+form textarea {
     min-height: 13rem;
     resize: vertical;
 
@@ -389,13 +459,13 @@ form textarea{
 form input:hover,
 form input:focus,
 form textarea:hover,
-form textarea:focus{
+form textarea:focus {
     outline: none;
     border-color: rgb(43, 43, 185);
     box-shadow: 3px rgb(43, 43, 185);
 }
 
-.cardsPosition{
+.cardsPosition {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -403,126 +473,112 @@ form textarea:focus{
 
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: #555;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: #555;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.img-modal{
+    height: 80vh;
 }
 
-/* Card */
+.container{
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.container .card{
+    background-color: black;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.container .card .img{
+    transition: 0.5s;
+    height: 50vh;
+}
+
+.container .card .content{
+    text-align: center;
+}
+
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
 .card {
-  width: 300px;
-  height: 460px;
-  margin: 25px;
-  border: 1px solid white;
-  border-color: #2740d1;
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    border: 1px solid white;
+    border-color: #2740d1;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
 }
 
-/* Card Header*/
-.card-header {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  display: block;
-    margin-left: auto;
-    margin-right: auto 
-    
-}
-
-
-/* Card Body */
-.card-body {
-  height: 70px;
-  padding: 15px;
-  text-align: center;
-  font-family: sans-serif;
-}
-
-.card-local {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.card-titulo {
-  font-size: 32px;
-  margin: 10px 0;
-}
-
-.card-texto {
-  font-size: 12px;
-  width: 250px;
-  margin: 0 auto;
-}
-
-/* Card Footer */
-.card-footer {
-  margin-top: 30px;
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-  display: block;
-  padding: 16px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-weight: 600;
-}
-.vermais{
+.vermais {
+    margin-top: 10px;
     font-size: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
 }
+
 .vermais:hover {
     color: blue;
     cursor: pointer;
     font-size: 21px;
-  }
-/* Cores Cards */
-.card-1 .card-footer {
-  background-color:black;
 }
 
-.card-1 .card-local {
-  color: #2740d1;
-}
-.content-modal{
+.content-modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
-	align-items: center;
-	justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
     padding: 20px;
 }
 
-.content-modal{
+.content-modal {
     justify-content: space-around;
-  
+
     width: 160vh;
     height: 70vh;
-    background:black;
+    background: black;
     transition: .2s ease-in;
 }
 
-.close-btn{
-   top: 10px;
+.close-btn {
+    top: 15vh;
     right: 150px;
     position: absolute;
     cursor: pointer;
@@ -531,17 +587,18 @@ body {
     line-height: 1;
     color: white;
     text-shadow: 0 1px 0 #fff;
-    opacity: .5;  
+    opacity: .5;
 }
-.close-btn:hover{
-     color: rgb(43, 43, 185);
-     opacity: 1;
- }
 
- .btn-portifolio{
-     background-color: #000;
-     font-size: 30px;
-     position: relative;
+.close-btn:hover {
+    color: rgb(43, 43, 185);
+    opacity: 1;
+}
+
+.btn-portifolio {
+    background-color: #000;
+    font-size: 30px;
+    position: relative;
     display: inline-block;
     padding: 10px 20px;
     color: white;
@@ -553,12 +610,13 @@ body {
     letter-spacing: 2px;
     padding: 10px;
     margin-top: 30px;
- }
- .btn-portifolio:hover{
+}
+
+.btn-portifolio:hover {
     cursor: pointer;
     padding: 10px;
     background: rgb(43, 43, 185);
     color: #fff;
     box-shadow: 0 0 5px rgb(43, 43, 185),
-                0 0 25px rgb(43, 43, 185);
+        0 0 25px rgb(43, 43, 185);
 }

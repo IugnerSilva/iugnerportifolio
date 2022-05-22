@@ -1,137 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style/style.css" rel="stylesheet">
-    
-    <link href="./style/media.css" rel="stylesheet">
-	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-  
-    <title>Portifólio</title>
-    
+<head>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style/style.css" rel="stylesheet">
+
+  <link href="./style/media.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <title>Portifólio</title>
+
 </head>
 
 <body class="hero">
-<header>
+  <header>
     <div class="title">
       <h1 class="logo"><span>IUGNER </span>{ SANTOS }</h1>
     </div>
     <button class="buttonmenu">
-        &#9776;
+      &#9776;
     </button>
     <ul>
-        <a href="index.html"><li>Início</li></a>
-        <a href="projetos.html"><li>Portifólio</li></a>
-        <a href="about.html"><li>Sobre</li></a>
-        <a href="contact.html"><li>Contato</li></a>
-        
+      <a href="index.html">
+        <li>Início</li>
+      </a>
+      <a href="projetos.html">
+        <li>Portifólio</li>
+      </a>
+      <a href="about.html">
+        <li>Sobre</li>
+      </a>
+      <a href="contact.html">
+        <li>Contato</li>
+      </a>
+
     </ul>
-</header>
+  </header>
 
-      <div class="container">
+  <div class="container">
+    <div class="card">
+      <div>
 
-<div class="card card-1">
-    <!-- card-header -->
-    <div class="card-header">
-      <img src="images/portifolio.index.png" width="300px" height="350">
-   </div>
-    <!-- card-header -->
+        <img src="images/portifolio.index.png" class="img">
+      </div>
+      <h2>Portifólio</h2>
+      <div class="content">
+        <label for="click">
+          <a class="butao" data-toggle="modal" data-target="#myModal2" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Ver MAis</a>
+        </label>
+      </div>
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="main-modal">
 
-    <!-- card-body -->
-    <div class="card-body">
-      <h2 class="card-titulo">Portifólio</h2>
-      <h3 class="card-local">Java Script | Html | Css</h3>
-    </div>
-    <!-- card-body -->
-  
-    <label for="click" class="card-footer" >
-      <p class="vermais" data-toggle="modal" data-target="#myModal">Ver Mais</p></label>
+          <img src="./images/portifolio.index.png" class="img-modal">
+          <label type="button" class="close-btn" data-dismiss="modal" aria-label="Fechar">
+            <p aria-hidden="true">&times;</p>
+          </label>
+          <div class="about-text">
 
-    <div class="modal fade" id="myModal" role="dialog">
-    <div class="main">
-  
-      <img src="./images/portifolio.index.png" class="img-modal">
-      <label type="button" class="close-btn" data-dismiss="modal" aria-label="Fechar">
-        <p aria-hidden="true">&times;</p>
-    </label>
-        <div class="about-text">
+            <h2>MercadOn</h2>
 
-        <h2>Portifólio</h2>
-        <h5> <span>Java Script | Html | Css</span></h5>
-        <p>Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.</p>
+            <h5><span>TypeScript | HTML | SCSS | JavaScript | Ionic | Angular
+              </span></h5>
+            <p>Projeto mobile e-commerce onde os clientes podem fazer compras de forma online sem precisar sair de casa.
+            </p>
 
-                    <label data-dismiss="modal" class="butao">
-                        <a><span></span>
-                          <span></span>
-                          <span></span>
-                          <span></span> Fechar</a>
-                    </label>
+            <label data-dismiss="modal" class="butao">
+              <a><span></span>
+                <span></span>
+                <span></span>
+                <span></span> Fechar</a>
+            </label>
+          </div>
         </div>
+      </div>
     </div>
- </div>
-</div>
 
-<div class="card card-1">
-    <!-- card-header -->
-    <div class="card-header">
-      <img src="images/mercadon.index.jpg" width="280px">
-   </div>
-    <!-- card-header -->
 
-    <!-- card-body -->
-    <div class="card-body">
-      <h2 class="card-titulo">MercadOn</h2>
-      <h3 class="card-local">TypeScript | HTML | SCSS | JavaScript</h3>
-    </div>
-    <!-- card-body -->
-  
-    <label class="card-footer"  data-toggle="modal" data-target="#myModal2">
-      <p class="vermais">Ver Mais</p></label>
+    <div class="card">
+      <div>
 
-    <div class="modal fade" id="myModal2" role="dialog">
-    <div class="main">
-  
-      <img src="./images/mercadon.index.jpg" class="img-modal">
-      <label type="button" class="close-btn" data-dismiss="modal" aria-label="Fechar">
-        <p aria-hidden="true">&times;</p>
-    </label>
-        <div class="about-text">
-            
-        <h2>MercadOn</h2>
-        
-        <h5><span>TypeScript | HTML | SCSS | JavaScript | Ionic | Angular
-          </span></h5>
-        <p>Projeto mobile e-commerce onde os clientes podem fazer compras de forma online sem precisar sair de casa.  </p>
-                    
-                    <label data-dismiss="modal" class="butao">
-                    <a><span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span> Fechar</a>
-                    </label>
+        <img src="images/mercadon.index.jpg" class="img">
+      </div>
+      <h2>MercadOn</h2>
+      <div class="content">
+        <label for="click">
+          <a class="butao" data-toggle="modal" data-target="#myModal" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Ver Mais</a>
+        </label>
+      </div>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="main-modal">
+
+          <img src="./images/mercadon.index.jpg" class="img-modal">
+          <label type="button" class="close-btn" data-dismiss="modal" aria-label="Fechar">
+            <p aria-hidden="true">&times;</p>
+          </label>
+          <div class="about-text">
+
+            <h2>MercadOn</h2>
+
+            <h5><span>TypeScript | HTML | SCSS | JavaScript | Ionic | Angular
+              </span></h5>
+            <p>Projeto mobile e-commerce onde os clientes podem fazer compras de forma online sem precisar sair de casa.
+            </p>
+
+            <label data-dismiss="modal" class="butao">
+              <a><span></span>
+                <span></span>
+                <span></span>
+                <span></span> Fechar</a>
+            </label>
+          </div>
         </div>
+      </div>
     </div>
- </div>
-</div>
+  </div>
+  </div>
 
-</div>
-
-
-<!----------------------------------------------------modal------------------------------------------->
-
-
-
-
-
-
-
-    
+  </div>
 </body>
+
 </html>

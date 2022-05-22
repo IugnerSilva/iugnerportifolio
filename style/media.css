@@ -1,12 +1,13 @@
-
-.buttonmenu:focus~ul{
+.buttonmenu:focus~ul {
     height: 230px;
 }
-.buttonmenu:hover{
+
+.buttonmenu:hover {
     background-color: rgb(79, 82, 85);
     cursor: pointer;
 }
-a:hover{
+
+a:hover {
     color: rgb(43, 43, 185);
     transition: 0.3s all;
 }
@@ -17,7 +18,8 @@ ul {
     overflow: hidden;
     transition: all .5s;
 }
-.buttonmenu{
+
+.buttonmenu {
     align-items: unset;
     background-color: transparent;
     border: none;
@@ -27,98 +29,117 @@ ul {
     right: 10px;
     display: none;
 }
-@media screen and (max-width: 768px){
-    form{
+
+@media screen and (max-width: 768px) {
+
+    .container .card .img {
+        transition: 0.5s;
+        height: 40vh;
+        width: 40vh;
+    }
+
+    form {
         font-size: 15px;
     }
-    section{
+
+    section {
         padding-top: 70px;
         padding-bottom: 80px;
     }
-    .about-text p{
-        color: #fcfc;
+
+    .about-text p {
+        color: white;
         letter-spacing: 1px;
         line-height: 28px;
         font-size: 15px;
         margin-bottom: 45px;
     }
-    form input,form textarea{
+
+    form input,
+    form textarea {
         width: 95%;
     }
-    .formcontact{
+
+    .formcontact {
         width: 400px;
-        padding-top: 40px;
+        margin-left: 7vh;
+        padding: 10px;
     }
-    
-    .close-btn{
-        
-    right: 30px;
+
+    .close-btn {
+
+        right: 30px;
 
     }
 
-    img{
-        min-width: 100%;
-        width: auto;
-        height: 100%;
-    }
-
-    .img-modal{
+    .img-about {
         min-width: 80%;
         height: 60vh;
         padding-top: 8vh;
     }
 
-    .container{
-        margin-top: 80%;
-        flex-direction: column;
-        
-    align-items: center;
-   
+    .close-btn {
+        top: 10px;
     }
 
-    .content-modal{
+    .img-modal {
+        min-width: 80%;
+        height: 60vh;
+        padding-top: 8vh;
+    }
+
+    .content-modal {
         flex-direction: column;
         height: 100vh;
         width: 70vh;
     }
-    .main{
+
+    .main-modal,
+    .main {
         flex-direction: column;
-        
+        margin: auto;
+
     }
-    
-    .about-text{
+
+    .about-text {
         width: 300px;
     }
-    .about-text h2{
+
+    .about-text h2 {
         color: white;
         font-size: 45px;
         text-transform: capitalize;
         margin-bottom: 20px;
     }
 
-    .buttonmenu{
+    .buttonmenu {
         display: flex;
     }
 
-    .content{
+    .content-inicio {
         top: 60%;
     }
 
-    a{  display: flex;
+    .container .card {
+        margin-top: 10vh;
+    }
+
+    a {
+        display: flex;
         flex-direction: column;
         font-size: 15px;
     }
 
-    h1{
+    h1 {
         font-size: 15;
     }
 
-    .title{
+    .title {
         padding: 20px;
         align-items: unset;
     }
-    
-    header{
+
+    header {
         height: fit-content;
         flex-direction: column;
         padding: 0;
@@ -126,14 +147,11 @@ ul {
         position: fixed;
     }
 
-    ul{
+    ul {
         margin: 0;
         flex-direction: column;
         height: 0;
         text-align: center;
         width: 100%;
     }
-    
-    
-    
 }
