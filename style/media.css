@@ -62,7 +62,7 @@ ul {
 
     .formcontact {
         width: 400px;
-        margin-left: 7vh;
+        margin: auto;
         padding: 10px;
     }
 
@@ -70,6 +70,9 @@ ul {
 
         right: 30px;
 
+    }
+    .container{
+        margin: auto;
     }
 
     .img-about {
