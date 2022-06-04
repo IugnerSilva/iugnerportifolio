@@ -98,7 +98,10 @@ ul {
         width: 70vh;
     }
 
-    .main-modal,
+    .main-modal{
+        flex-direction: column;
+        margin: auto;
+    }
     .main {
         flex-direction: column;
         margin: auto;
