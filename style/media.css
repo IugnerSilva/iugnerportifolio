@@ -64,6 +64,7 @@ ul {
         width: 400px;
         margin: auto;
         padding: 10px;
+        margin-top: 5vh;
     }
 
     .close-btn {
@@ -101,6 +102,7 @@ ul {
     .main {
         flex-direction: column;
         margin: auto;
+        margin-top: 5vh;
 
     }
 
